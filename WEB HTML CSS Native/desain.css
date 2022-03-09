@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: calibri, "segoe ui", arial, tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(224, 183, 228);
+}
+
+#wrapper {
+  width: max-content;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#header {
+  background: url(img/header.png) repeat-x;
+  height: 150px;
+  width: 1500px;
+  padding: 20px;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bold;
+}
+#header img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#menu {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+#menu li {
+  float: right;
+  margin-right: 60px;
+  padding: 3px 10px;
+  border-right: 1px solid #555555;
+}
+
+#menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#daftar-pilihan {
+  float: center;
+  margin-top: auto;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  width: 50%;
+  float: left;
+}
+
+.pilihan {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.pilihan img {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  height: 165px;
+}
+
+.pilihan p {
+  display: block;
+  text-align: left;
+  color: #636363;
+}
+
+#rightbar {
+  width: 270px;
+  height: 500px;
+  float: right;
+  background: #c772ff;
+  padding: 10px;
+  padding-right: 20px;
+  margin-right: 30px;
+}
+
+#rightbar input {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+#rightbar textarea {
+  height: 40px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+#rightbar input,
+textarea,
+option,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+#rightbar input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  background: #0092e6;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#rightbar h2 {
+  margin: 0 40px;
+  padding: 15px;
+  color: #3b0875;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+#rightbar form {
+  margin-top: 3rem;
+}
+
+#leftbar {
+  background-color: #c772ff;
+  float: left;
+  width: 270px;
+  height: 500px;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#leftbar figure {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin-left: 10px;
+  margin-top: 3rem;
+}
+
+#leftbar h2 {
+  margin: 0 40px;
+  padding: 15px;
+  color: #3b0875;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+  background-color: rgb(58, 30, 85);
+  padding: 5px;
+  color: #000000;
+}
