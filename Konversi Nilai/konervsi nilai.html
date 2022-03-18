@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Konversi Nilai Citra</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script language="JavaScript">
+    function test() {
+      var val1 = document.knvrsi.angka.value;
+      if (val1 > 80 && val1 <= 100) document.knvrsi.huruf.value = "A";
+      else if (val1 > 70 && val1 <= 79) document.knvrsi.huruf.value = "B";
+      else if (val1 > 60 && val1 <= 69) document.knvrsi.huruf.value = "C";
+      else if (val1 > 50 && val1 <= 59) document.knvrsi.huruf.value = "D";
+      else if (val1 > 0 && val1 <= 49) document.knvrsi.huruf.value = "E";
+      else document.knvrsi.huruf.value = "Nila Tidak Valid";
+    }
+  </script>
+  <body>
+    <h1>Konversi Nilai Angka Ke Huruf</h1>
+    <div id="content">
+      <h2>Masukkan Nilai</h2>
+      <form method="POST" name="knvrsi">
+        <p>NILAI ANGKA <input type="text" name="angka" size="20" /> NILAI HURUF <input type="text" name="huruf" size="20" /></p>
+        <p><input type="button" value="Konversi" name="B1" onclick="test()" /></p>
+      </form>
+    </div>
+  </body>
+</html>

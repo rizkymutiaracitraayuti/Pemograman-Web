@@ -1,0 +1,22 @@
+body {
+  padding-right: 50px;
+  background-color: rgb(248, 215, 236);
+}
+
+h1 {
+  text-align: center;
+}
+
+#content {
+  background-color: #d297fa;
+  width: 600px;
+  height: 300px;
+  margin-left: 400px;
+  padding-top: 10px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+#content h2 {
+  text-align: center;
+}
