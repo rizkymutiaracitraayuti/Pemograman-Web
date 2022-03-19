@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Konversi Suhu Citra</title>
+    <link rel="stylesheet" href="suhu.css" />
+  </head>
+
+  <body>
+    <h1>Hitung Konversi Suhu</h1>
+    <div id="content">
+      <h2>Masukkan Nilai Suhu</h2>
+      <form name="konversi">
+        <p>Nilai Suhu <input type="text" name="suhu" size="20" /></p>
+        <label for="pilihan">Pilihan Konversi</label>
+        <select name="pilihan">
+          <option value="CF">Celcius-Fahrenheit</option>
+          <option value="CK">Celcius-Kelvin</option>
+          <option value="CR">Celcius-Reamur</option>
+          <option value="FC">Fahrenheit-Celcius</option>
+          <option value="FK">Fahrenheit-Kelvin</option>
+          <option value="FR">Fahrenheit-Reamur</option>
+          <option value="KC">Kelvin-Celcius</option>
+          <option value="KF">Kelvin-Fahrenheit</option>
+          <option value="KR">Kelvin-Reamur</option>
+          <option value="RC">Reamur-Celcius</option>
+          <option value="RF">Reamur-Fahrenheit</option>
+          <option value="RK">Reamur-Kelvin</option>
+        </select>
+        <input type="button" value="Ubah" name="B1" onclick="knvrsi()" />
+        <p>Hasil Konversi Suhu <input type="text" name="hasil" size="20" /></p>
+      </form>
+    </div>
+  </body>
+
+  <script language="JavaScript" type="text/javascript">
+    function knvrsi() {
+      var Nilai = document.konversi.suhu.value;
+      var Konversi = document.konversi.pilihan.value;
+      var Hasil;
+
+      if (Konversi == "CF") {
+        Hasil = (9 / 5) * parseInt(Nilai) + 32;
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "CK") {
+        Hasil = parseInt(Nilai) + 273.15;
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "CR") {
+        Hasil = (4 / 5) * parent(Nilai);
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "FC") {
+        Hasil = (parseInt(Nilai) - 32) / (9 / 5);
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "FK") {
+        Hasil = (parseInt(Nilai) + 459.67) / (9 / 5);
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "FR") {
+        Hasil = (parseInt(Nilai) - 32) / (9 / 4);
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "KC") {
+        Hasil = parseInt(Nilai) - 273.15;
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "KF") {
+        Hasil = parseInt(Nilai) * (9 / 5) - 459.67;
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "KR") {
+        Hasil = (parseInt(Nilai) - 273.15) * (9 / 5);
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "RC") {
+        Hasil = parseInt(Nilai) / (4 / 5);
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "RF") {
+        Hasil = (9 / 4) * parseInt(Nilai) + 32;
+        document.konversi.hasil.value = Hasil;
+      } else if (Konversi == "RK") {
+        Hasil = parseInt(Nilai) / (4 / 5) + 273.15;
+        document.konversi.hasil.value = Hasil;
+      } else {
+        Hasil = "Tidak Ada";
+        document.konversi.hasil.value = Hasil;
+      }
+    }
+  </script>
+</html>

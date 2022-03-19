@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diskon Harga Citra</title>
+    <link rel="stylesheet" href="diskon.css" />
+  </head>
+  <body>
+    <h1>Hitung Harga Diskon</h1>
+    <div id="content">
+      <h2>Masukkan Harga dan Diskon</h2>
+      <form method="POST" name="diskon">
+        <p>Harga Barang <input type="text" name="harga" size="20" /> Persen Diskon <input type="text" name="persen" size="20" /></p>
+        <p><input type="button" value="Cek Harga" name="cek" onclick="CekDsc()" /></p>
+        <p>Harga setelah Diskon <input type="text" name="hasil" size="20" /></p>
+      </form>
+    </div>
+  </body>
+  <script language="JavaScript" type="text/javascript">
+    function CekDsc() {
+      var Harga = document.diskon.harga.value;
+      var Persen = document.diskon.persen.value;
+      var Diskon = (Harga * Persen) / 100;
+      var Hasil = Harga - Diskon;
+      document.diskon.hasil.value = Hasil;
+    }
+  </script>
+</html>
