@@ -22,3 +22,13 @@ h1 {
 #content h2 {
   text-align: center;
 }
+
+#footer {
+  clear: both;
+  text-align: center;
+  background-color: rgb(58, 30, 85);
+  padding: 0px;
+  margin-top: 300px;
+  margin-left: 50px;
+  color: #fcfcfc;
+}

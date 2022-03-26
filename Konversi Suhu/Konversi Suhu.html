@@ -30,6 +30,9 @@
         <p>Hasil Konversi Suhu <input type="text" name="hasil" size="20" /></p>
       </form>
     </div>
+    <div id="footer">
+      <p>Rizky Mutiara Citra Ayuti CR 2022</p>
+    </div>
   </body>
 
   <script language="JavaScript" type="text/javascript">
@@ -45,7 +48,7 @@
         Hasil = parseInt(Nilai) + 273.15;
         document.konversi.hasil.value = Hasil;
       } else if (Konversi == "CR") {
-        Hasil = (4 / 5) * parent(Nilai);
+        Hasil = (4 / 5) * parseInt(Nilai);
         document.konversi.hasil.value = Hasil;
       } else if (Konversi == "FC") {
         Hasil = (parseInt(Nilai) - 32) / (9 / 5);
