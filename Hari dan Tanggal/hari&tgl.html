@@ -1,13 +1,21 @@
-<title>Hari dan Tanggal</title>
-<div style="-moz-border-radius: 10px; -webkit-border-radius: 10px; background-color: #d297fa; border-radius: 10px; border: 4px solid rgb(139, 92, 139); padding: 10px; text-align: center">
-  <script type="text/javascript">
-    var NmBln = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-    var NmHr = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum&#39;at", "Sabtu"];
-    var sekarang = new Date();
-    var hariini = NmHr[sekarang.getDay()];
-    var tglini = sekarang.getDate();
-    var bulanini = NmBln[sekarang.getMonth()];
-    var tahunini = sekarang.getFullYear();
-    document.write("Hari ini adalah" + " " + hariini + ", " + tglini + " " + bulanini + " " + tahunini);
-  </script>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hari dan Tanggal</title>
+  </head>
+  <body style="background-color: #ee96d1">
+    <div style="-moz-border-radius: 10px; -webkit-border-radius: 10px; background-color: #f03a64; border-radius: 10px; border: 4px solid rgb(190, 0, 95); padding: 10px; margin-top: 30px; color: white; font-size: large; text-align: center">
+      <script type="text/javascript">
+        var NmBln = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+        var NmHr = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum&#39;at", "Sabtu"];
+        var sekarang = new Date();
+        var hariini = NmHr[sekarang.getDay()];
+        var tglini = sekarang.getDate();
+        var bulanini = NmBln[sekarang.getMonth()];
+        var tahunini = sekarang.getFullYear();
+        document.write("Hari ini adalah" + " " + hariini + ", " + tglini + " " + bulanini + " " + tahunini);
+      </script>
+    </div>
+    <img src="tanggal.png" style="margin-top: 35px; margin-left: 485px" />
+  </body>
+</html>
