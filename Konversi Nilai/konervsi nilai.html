@@ -4,14 +4,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <script language="JavaScript">
-    function test() {
-      var val1 = document.knvrsi.angka.value;
-      if (val1 > 80 && val1 <= 100) document.knvrsi.huruf.value = "A";
-      else if (val1 > 70 && val1 <= 79) document.knvrsi.huruf.value = "B";
-      else if (val1 > 60 && val1 <= 69) document.knvrsi.huruf.value = "C";
-      else if (val1 > 50 && val1 <= 59) document.knvrsi.huruf.value = "D";
-      else if (val1 > 0 && val1 <= 49) document.knvrsi.huruf.value = "E";
-      else document.knvrsi.huruf.value = "Nila Tidak Valid";
+    function Konversi() {
+      var nilai = document.knvrsi.angka.value;
+      if (nilai > 80 && nilai <= 100) document.knvrsi.huruf.value = "A";
+      else if (nilai > 70 && nilai <= 79) document.knvrsi.huruf.value = "B";
+      else if (nilai > 60 && nilai <= 69) document.knvrsi.huruf.value = "C";
+      else if (nilai > 50 && nilai <= 59) document.knvrsi.huruf.value = "D";
+      else if (nilai > 0 && nilai <= 49) document.knvrsi.huruf.value = "E";
+      else document.knvrsi.huruf.value = "Nilai Tidak Valid";
     }
   </script>
   <body>
@@ -20,8 +20,12 @@
       <h2>Masukkan Nilai</h2>
       <form method="POST" name="knvrsi">
         <p>NILAI ANGKA <input type="text" name="angka" size="20" /> NILAI HURUF <input type="text" name="huruf" size="20" /></p>
-        <p><input type="button" value="Konversi" name="B1" onclick="test()" /></p>
+        <p><input type="button" value="Konversi" name="knv" onclick="Konversi()" /></p>
       </form>
+    </div>
+
+    <div id="footer">
+      <p>Rizky Mutiara Citra Ayuti CR 2022</p>
     </div>
   </body>
 </html>
