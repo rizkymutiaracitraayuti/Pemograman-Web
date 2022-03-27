@@ -1,6 +1,6 @@
 body {
   padding-right: 50px;
-  background-color: rgb(248, 215, 236);
+  background: url(bsmllh.png);
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
   background-color: #d297fa;
   width: 600px;
   height: 300px;
-  margin-left: 400px;
+  margin-left: 420px;
   padding-top: 10px;
   margin-top: 30px;
   padding-left: 20px;
@@ -28,7 +28,7 @@ h1 {
   text-align: center;
   background-color: rgb(58, 30, 85);
   padding: 0px;
-  margin-top: 300px;
+  margin-top: 320px;
   margin-left: 50px;
   color: #fcfcfc;
 }
