@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gambar Random</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>NRP</td>
+        <td>Gambar yang tampil</td>
+      </tr>
+      <tr>
+        <td class="nrp1">2110141037</td>
+        <td>tiga jenis mobil</td>
+      </tr>
+      <tr>
+        <td class="nrp2">2110141038</td>
+        <td>tiga jenis Seperda motor</td>
+      </tr>
+      <tr>
+        <td class="nrp3">2110141039</td>
+        <td>tiga jenis Smartphone</td>
+      </tr>
+    </table>
+    <h4>Masukkan NRP Random Images</h4>
+    <br />
+    <hr />
+    <label>Masukkan NRP</label>
+    <input type="text" id="barang" /><br />
+    <hr />
+    <br />
+    <button onclick="PilihGambar()">Submit</button>
+    <img src="img/2110141037.jpg" width="300" height="300" id="gambarSaya" />
+    <script>
+      window.onload = PilihGambar;
+
+      var gambar = new Array("img/123.jpg", "img/333.jpg", "img/344.jpg", "img/345.jpg", "img/446.jpg", "img/2233.png", "img/21101410374.jpg", "img/sp.jpg");
+
+      function PilihGambar() {
+        var randomNum = Math.floor(Math.random() * gambar.length);
+        document.getElementById("gambarSaya").src = gambar[randomNum];
+      }
+    </script>
+  </body>
+</html>

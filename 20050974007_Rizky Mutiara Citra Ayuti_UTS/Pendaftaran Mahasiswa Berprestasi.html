@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="mhs.css" />
+  </head>
+  <body>
+    <h2>Pendaftaran Mahasiswa Berprestasi</h2>
+    <div class="form">
+      <div>
+        <span>Nim : </span>
+        <input type="text" id="nim" />
+      </div>
+      <div>
+        <span>Nama Mahasiswa : </span>
+        <input type="text" id="nama" />
+      </div>
+      <div>
+        <span>Kelas : </span>
+        <input type="text" id="kelas" />
+      </div>
+      <div>
+        <span>Prodi : </span>
+        <input type="text" id="prodi" />
+      </div>
+      <div>
+        <span>Prestasi : </span>
+        <input type="text" id="prestasi" />
+      </div>
+      <button class="tombol" onclick="submit()">Kirim</button>
+      <div id="tampilan"></div>
+    </div>
+  </body>
+  <script language="javascript" type="text/javascript">
+    var nim = document.getElementById("nim");
+    var nama = document.getElementById("nama");
+    var kelas = document.getElementById("kelas");
+    var prodi = document.getElementById("prodi");
+    var prestasi = document.getElementById("prestasi");
+    var tamp = document.getElementById("tampilan");
+
+    function submit() {
+      tamp.innerText = "Nim : " + nim.value + "\n" + "Nama : " + nama.value + "\n" + "Kelas : " + kelas.value + "\n" + "Prodi : " + prodi.value + "\n" + "Prestasi : " + prestasi.value;
+    }
+  </script>
+</html>
