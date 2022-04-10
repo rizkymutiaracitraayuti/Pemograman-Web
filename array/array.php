@@ -7,7 +7,7 @@ $bb = array("BB 50kg dan TB 160cm","BB 50kg dan TB 160cm","BB 60kg dan TB 170cm"
 $aktif = array("Aktif","Cuti");
 
 echo "<p>----------------------------------------------if-else------------------------------------<p>";
-if ($nrp[0] <= 1) {
+if ($nrp[0] == 1) {
 	echo "<p>NRP $nrp[0]<p>";
 	echo "<p>Nama : $nama[0]<p>";
 	echo "<p>IPK : $ipk[0]<p>";
@@ -15,7 +15,43 @@ if ($nrp[0] <= 1) {
 	echo "<p>BB : $bb[0]<p>";	
 	echo "<p>aktif : $aktif[0]<p>";
 
+}
+if ($nrp[1] == 2) {
+	echo "<p>NRP $nrp[1]<p>";
+	echo "<p>Nama : $nama[1]<p>";
+	echo "<p>IPK : $ipk[1]<p>";
+	echo "<p>Rambut : $rambut[1]<p>";
+	echo "<p>BB : $bb[0]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+
 } 
+if ($nrp[2] == 3) {
+	echo "<p>NRP $nrp[2]<p>";
+	echo "<p>Nama : $nama[2]<p>";
+	echo "<p>IPK : $ipk[2]<p>";
+	echo "<p>Rambut : $rambut[0]<p>";
+	echo "<p>BB : $bb[2]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+
+} 
+if ($nrp[3] == 4) {
+	echo "<p>NRP $nrp[3]<p>";
+	echo "<p>Nama : $nama[3]<p>";
+	echo "<p>IPK : $ipk[3]<p>";
+	echo "<p>Rambut : $rambut[1]<p>";
+	echo "<p>BB : $bb[1]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+
+} 
+if ($nrp[4] == 5) {
+	echo "<p>NRP $nrp[4]<p>";
+	echo "<p>Nama : $nama[4]<p>";
+	echo "<p>IPK : $ipk[4]<p>";
+	echo "<p>Rambut : $rambut[0]<p>";
+	echo "<p>BB : $bb[2]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+
+}  
 
 echo "<p>----------------------------------------------switch-case------------------------------------<p>";
 $favcolor = "6";
@@ -28,8 +64,36 @@ switch ($favcolor) {
 	echo "<p>Rambut : $rambut[1]<p>";
 	echo "<p>BB : $bb[1]<p>";	
 	echo "<p>aktif : $aktif[0]<p>";
-	$favcolor++;
+	case "7":
+	echo "<p>NRP : $nrp[6]<p>";
+	echo "<p>Nama : $nama[6]<p>";
+	echo "<p>IPK : $ipk[3]<p>";
+	echo "<p>Rambut : $rambut[0]<p>";
+	echo "<p>BB : $bb[0]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+	case "8":
+	echo "<p>NRP : $nrp[7]<p>";
+	echo "<p>Nama : $nama[7]<p>";
+	echo "<p>IPK : $ipk[1]<p>";
+	echo "<p>Rambut : $rambut[0]<p>";
+	echo "<p>BB : $bb[2]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+	case "9":
+	echo "<p>NRP : $nrp[8]<p>";
+	echo "<p>Nama : $nama[8]<p>";
+	echo "<p>IPK : $ipk[4]<p>";
+	echo "<p>Rambut : $rambut[1]<p>";
+	echo "<p>BB : $bb[3]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
+	case "10":
+	echo "<p>NRP : $nrp[9]<p>";
+	echo "<p>Nama : $nama[9]<p>";
+	echo "<p>IPK : $ipk[2]<p>";
+	echo "<p>Rambut : $rambut[0]<p>";
+	echo "<p>BB : $bb[1]<p>";	
+	echo "<p>aktif : $aktif[0]<p>";
 	break;
+
 }
 
 echo "<p>----------------------------------------------do-while------------------------------------<p>";
