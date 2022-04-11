@@ -8,28 +8,26 @@ $namadesc= array("Atun","Dece","Shelma","Citra","Fadiya","Rara","Husna","Zaskhia
 echo "<p>_________________________________________ASC_______________________________________________<p>";
 
 
-function dataMhsasc($nrpasc,$namaasc){
+function dataMhsasc($namaasc){
 	for ($i=0; $i <30 ; $i++) { 
-	echo "<p>NRP $nrpasc[$i]<p>";
 	echo "<p>Nama $namaasc[$i]<p>";
 	echo "<hr>";
 	
 	}
 
 }
-dataMhsasc($nrpasc,$namaasc);
+dataMhsasc($namaasc);
 echo "<p>_________________________________________DESC_______________________________________________<p>";
 
-function dataMhsDesc($nrpdesc,$namadesc){
+function dataMhsDesc($nrpdesc){
 for ($i=0; $i <29 ; $i++) { 
 	echo "<p>NRP $nrpdesc[$i]<p>";
-	echo "<p>Nama $namadesc[$i]<p>";
 	echo "<hr>";
 	
 	}
 
 
 }
-dataMhsasc($nrpdesc,$namadesc);
+dataMhsasc($nrpdesc);
 
  ?>

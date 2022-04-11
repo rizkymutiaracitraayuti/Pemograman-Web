@@ -7,25 +7,9 @@ $kelas=array("D4-A","D4-B" );
 $nilai= array("A");
 $aktif = array("HIMTI");
 function Tampil($nrp,$nama,$dosen,$kelas,$nilai,$aktif){
-	for ($i=0; $i <15 ; $i++) {
-	echo "<p>User $nrp[$i]<p>";	
-	echo "<p>Nama Mhs :	$nama[$i]<p>";
-	echo "<p>Kelas Mhs	: $kelas[0]<p>";
-	echo "<p>nama Dosen	: $dosen[0]<p>";
-	echo "<p>Nilai :	 $nilai[0]<p>";
-	echo "<p>Mahasiswa Aktif Dihimti :	$aktif[0]  <p>";
-	echo "<hr>";
-
-
-}
-	for ($q=15; $q <30 ; $q++) {
-	echo "<p>User $nrp[$q]<p>";	
-	echo "<p>Nama Mhs :	$nama[$q]<p>";
-	echo "<p>Nama KelasMhs	: $kelas[1]<p>";
-	echo "<p>Nama Dosen	: $dosen[0]<p>";
-	echo "<p>Nilai :	 $nilai[0]<p>";
-	echo "<p>Mahasiswa Aktif Dihimti :	$aktif[0]  <p>";
-	echo "<hr>";
+	for ($i=0; $i <30 ; $i++) {
+		echo "$nama[$i] adalah mahasiswa $kelas[0] yang aktif di $aktif[0]";
+		echo "<hr>";
 
 
 }
